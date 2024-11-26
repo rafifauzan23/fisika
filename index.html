@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Physics - Premium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="light-mode">
+    <header class="py-3 bg-primary text-white sticky-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="assets/logo.png" alt="Logo" class="logo-img">
+            <h1 class="logo m-0">Quantum Physics</h1>
+            <button id="theme-toggle" class="btn btn-light btn-sm">🌙 Dark Mode</button>
+        </div>
+    </header>
+    <main class="container py-5">
+        <!-- Kalkulator Fisika -->
+        <section id="calculator" class="mb-5">
+            <h2 class="text-center mb-4">Kalkulator Fisika</h2>
+            <form id="force-calculator" class="row g-3">
+                <div class="col-md-6">
+                    <label for="mass" class="form-label">Massa (kg)</label>
+                    <input type="number" id="mass" class="form-control" placeholder="Masukkan massa..." required>
+                </div>
+                <div class="col-md-6">
+                    <label for="acceleration" class="form-label">Percepatan (m/s²)</label>
+                    <input type="number" id="acceleration" class="form-control" placeholder="Masukkan percepatan..." required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Hitung Gaya</button>
+                </div>
+            </form>
+            <div id="result" class="mt-4 text-center fs-4 text-success"></div>
+            <canvas id="force-chart" class="mt-4"></canvas>
+        </section>
+
+        <!-- Konversi Satuan Lengkap -->
+        <section id="unit-conversion" class="mb-5">
+            <h2 class="text-center mb-4">Konversi Satuan </h2>
+            <form id="unit-converter" class="row g-3">
+                <div class="col-md-4">
+                    <label for="length" class="form-label">Panjang (meter)</label>
+                    <input type="number" id="length" class="form-control" placeholder="Masukkan panjang...">
+                </div>
+                <div class="col-md-4">
+                    <label for="mass" class="form-label">Massa (kilogram)</label>
+                    <input type="number" id="mass-conversion" class="form-control" placeholder="Masukkan massa...">
+                </div>
+                <div class="col-md-4">
+                    <label for="time" class="form-label">Waktu (detik)</label>
+                    <input type="number" id="time" class="form-control" placeholder="Masukkan waktu...">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success w-100">Konversi</button>
+                </div>
+            </form>
+            <div id="conversion-result" class="mt-4 text-center fs-4 text-info"></div>
+        </section>
+
+        <!-- Konversi Suhu -->
+        <section id="temperature" class="mb-5">
+            <h2 class="text-center mb-4">Konversi Suhu</h2>
+            <form id="temperature-converter" class="row g-3">
+                <div class="col-md-4">
+                    <label for="celsius" class="form-label">Celsius</label>
+                    <input type="number" id="celsius" class="form-control" placeholder="Masukkan suhu dalam Celsius...">
+                </div>
+                <div class="col-md-4">
+                    <label for="fahrenheit" class="form-label">Fahrenheit</label>
+                    <input type="number" id="fahrenheit" class="form-control" placeholder="Masukkan suhu dalam Fahrenheit...">
+                </div>
+                <div class="col-md-4">
+                    <label for="kelvin" class="form-label">Kelvin</label>
+                    <input type="number" id="kelvin" class="form-control" placeholder="Masukkan suhu dalam Kelvin...">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-info w-100">Konversi</button>
+                </div>
+            </form>
+            <div id="temperature-result" class="mt-4 text-center fs-4 text-info"></div>
+        </section>
+
+        <!-- Referensi Rumus -->
+        <section id="references">
+            <h2 class="text-center mb-4">Referensi Rumus Fisika</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h3>Hukum Newton</h3>
+                        <p>\( F = ma \)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h3>Energi Kinetik</h3>
+                        <p>\( KE = \frac{1}{2}mv^2 \)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <h3>Momentum</h3>
+                        <p>\( p = mv \)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Quantum Physics | Buatan ABN</p>
+    </footer>
+</body>
+</html>

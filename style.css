@@ -1,0 +1,39 @@
+/* Light/Dark Mode */
+body.light-mode {
+    background-color: #f9fafb;
+    color: #333;
+}
+body.dark-mode {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+/* Utility Classes */
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#theme-toggle {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.card {
+    background: #f3f4f6;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode .card {
+    background: #334155;
+}
+
+/* Chart Canvas */
+canvas {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Logo Image */
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
